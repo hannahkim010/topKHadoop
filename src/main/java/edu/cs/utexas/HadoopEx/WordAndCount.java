@@ -1,16 +1,17 @@
 package edu.cs.utexas.HadoopEx;
 
 
-import org.apache.hadoop.io.IntWritable;
+// import org.apache.hadoop.io.FloatWritable;
+import org.apache.hadoop.io.FloatWritable;
 import org.apache.hadoop.io.Text;
 
 
 public class WordAndCount implements Comparable<WordAndCount> {
 
         private final Text word;
-        private final IntWritable count;
+        private final FloatWritable count;
 
-        public WordAndCount(Text word, IntWritable count) {
+        public WordAndCount(Text word, FloatWritable count) {
             this.word = word;
             this.count = count;
         }
@@ -19,7 +20,7 @@ public class WordAndCount implements Comparable<WordAndCount> {
             return word;
         }
 
-        public IntWritable getCount() {
+        public FloatWritable getCount() {
             return count;
         }
     /**
